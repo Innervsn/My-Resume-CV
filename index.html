@@ -8,113 +8,113 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <table>
-      <tr>
-        <td><img src="./images/я.jpg" alt="" /></td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img class="avatar" src="./images/я.jpg" alt="" />
+
+        <div class="info-text">
           <h1>Муртузалиев Андрей Сергеевич</h1>
-          <p>
-            <em>Начинающий разработчик</em>
-          </p>
+          <p>Начинающий разработчик</p>
           <p>
             <strong>Возраст:</strong>
-            <em>34 года</em>
+            34 года
           </p>
-        </td>
-      </tr>
-    </table>
 
-    <hr />
+          <h4>Мои социальные сети</h4>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-      <li>
-        <a href="https://vk.com/andrewsparrow" target="_blank">Вконтакте</a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/cpt.andrew_sparrow/" target="_blank"
-          >Instagram</a
-        >
-      </li>
-    </ul>
+          <a href="https://vk.com/andrewsparrow" target="_blank">Вконтакте</a>
+          |
+          <a
+            href="https://www.instagram.com/cpt.andrew_sparrow/"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
 
-    <hr />
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Музыка</li>
+          <li>Спорт: футбол, хоккей, бокс, MMA</li>
+          <li>Путешествия</li>
+          <li>Кино</li>
+          <li>История</li>
+        </ol>
+      </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-      <li>Музыка</li>
-      <li>Спорт: футбол, хоккей, бокс, MMA</li>
-      <li>Путешествия</li>
-      <li>Кино</li>
-      <li>История</li>
-    </ol>
+      <div class="card bg-green">
+        <h2>Мой опыт</h2>
 
-    <hr />
+        <table class="table">
+          <tr>
+            <th>Компания</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+          <tr>
+            <td>ЭТМ</td>
+            <td>Бренд-Менеджер</td>
+            <td>2011-2017</td>
+          </tr>
 
-    <h2>Мой опыт</h2>
+          <tr>
+            <td>Klinkmann</td>
+            <td>Менеджер по работе с проектами</td>
+            <td>2018-2020</td>
+          </tr>
 
-    <table>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-      <tr>
-        <td>ЭТМ</td>
-        <td>Бренд-Менеджер</td>
-        <td>2011-2017</td>
-      </tr>
+          <tr>
+            <td>Rittal</td>
+            <td>Региональный менеджер СЗФО</td>
+            <td>2020-2022</td>
+          </tr>
+        </table>
+      </div>
 
-      <tr>
-        <td>Klinkmann</td>
-        <td>Менеджер по работе с проектами</td>
-        <td>2018-2020</td>
-      </tr>
+      <div class="card bg-red">
+        <h2>Курсы по программированию</h2>
+        <table class="table">
+          <tr>
+            <th>Организация</th>
+            <th>Направление</th>
+            <th>Специализация</th>
+          </tr>
+          <tr>
+            <td>Innopolis</td>
+            <td>Front-end</td>
+            <td>HTML, CSS, SASS, БЭМ, JS, React</td>
+          </tr>
+        </table>
+      </div>
 
-      <tr>
-        <td>Rittal</td>
-        <td>Региональный менеджер СЗФО</td>
-        <td>2020-2022</td>
-      </tr>
-    </table>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
 
-    <hr />
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя..." />
+            </div>
 
-    <h2>Курсы по программированию</h2>
-    <table>
-      <tr>
-        <th>Организация</th>
-        <th>Направление</th>
-        <th>Специализация</th>
-      </tr>
-      <tr>
-        <td>Innopolis</td>
-        <td>Front-end</td>
-        <td>HTML,CSS,SASS,БЭМ,JS,React</td>
-      </tr>
-    </table>
+            <div class="form-group">
+              <label for="mail">Ваш email:</label>
+              <input
+                type="email"
+                id="mail"
+                placeholder="Введите ваш email..." />
+            </div>
+          </div>
 
-    <hr />
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
+            <textarea id="text"></textarea>
+          </div>
 
-    <h2>Связаться со мной</h2>
-
-    <form action="/">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" placeholder="Введите ваше имя..." />
-      <br />
-
-      <label for="mail">Ваш email:</label>
-      <input type="email" id="mail" placeholder="Введите ваш email..." />
-      <br />
-
-      <label for="text">Ваше сообщение:</label>
-      <br />
-      <textarea id="text"></textarea>
-      <br />
-
-      <input type="submit" value="Связаться!" name="" id="" />
-    </form>
-
-    <hr />
+          <input class="btn" type="submit" value="Связаться!" name="" id="" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
